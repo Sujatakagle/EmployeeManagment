@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: gray; /* Light lavender */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: 100vh; /* Ensure full height */
+}
+
+.App {
+  max-width: 1200px;
+  margin: 40px auto; /* Add margin from the top */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent for contrast */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filter-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap; /* Wrap items on smaller screens */
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1; /* Allow inputs to grow */
+  min-width: 120px; /* Minimum width for inputs */
+}
+
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.submit-button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #5cb85c;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  min-width: 100px; /* Ensure button is not too small */
+}
+
+.submit-button:hover {
+  background-color: #4cae4c;
+}
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.employee-table th,
+.employee-table td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+.employee-table th {
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 90%; /* Use percentage for better responsiveness */
+  max-width: 400px; /* Limit max width for larger screens */
+}
+
+button {
+  margin-right: 10px;
+  padding: 5px 10px; /* Adjust padding for better touch targets */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .app-header {
+    flex-direction: column; /* Stack header items */
+    align-items: flex-start; /* Align items to the left */
+  }
+
+  .filter-container {
+    width: 100%;
+  }
+
+  .input-container {
+    flex-direction: column; /* Stack input fields */
+  }
+
+  input[type="text"],
+  input[type="email"],
+  select {
+    width: 100%; /* Full width on smaller screens */
+    margin-bottom: 10px; /* Space between inputs */
+  }
+
+  .submit-button {
+    width: 100%; /* Full width for button */
+  }
+
+  .employee-table th,
+  .employee-table td {
+    font-size: 14px; /* Reduce font size for smaller screens */
+    padding: 5px; /* Reduce padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .employee-table th,
+  .employee-table td {
+    font-size: 12px; /* Further reduce font size */
+  }
+
+  button {
+    padding: 3px 6px; /* Smaller button padding */
+  }
+}

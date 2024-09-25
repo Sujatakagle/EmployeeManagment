@@ -1,0 +1,68 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "department": "Engineering",
+      "phone_number": "123-456-7890",
+      "email": "john.doe@gmail.com",
+      "position": "Software Engineer",
+      "location":"bangalore"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "department": "Marketing",
+      "phone_number": "987-654-3210",
+      "email": "jane.smith@gmail.com",
+      "position": "Marketing Manager",
+      "location":"bangalore"
+    }
+    , {
+        "id": 3,
+        "name": "Priya kulkarni",
+        "department": "Engineering",
+        "phone_number": "123-456-7890",
+        "email": "Priyakulkarni@gmail.com",
+        "position": "Software Tester",
+        "location":"Dehli"
+      },
+      {
+        "id": 4,
+        "name": "sangama patil",
+        "department": "Marketing",
+        "phone_number": "987-654-3210",
+        "email": "sangam@gmail.com",
+        "position": "Marketing Manager",
+        "location":"bangalore"
+      },
+      {
+        "id": 5,
+        "name": "Sangeeta patil",
+        "department": "Engineering",
+        "phone_number": "987-564-8230",
+        "email": "Sangeeta@gmail.com",
+        "position": "Software Tester",
+        "location":"Pune"
+      },
+      {
+        "id": 6,
+        "name": "Sameer patil",
+        "department": "Marketing",
+        "phone_number": "887-654-3210",
+        "email": "Sameer@gmail.com",
+        "position": "Marketing Manager",
+        "location":"bangalore"
+      },
+      {
+        "id": 7,
+        "name": "Varshita Kudagi",
+        "department": "Engineering",
+        "phone_number": "887-654-3290",
+        "email": "Varshita@gmail.com",
+        "position": "Software Engineer",
+        "location":"bangalore"
+      }
+      
+  ]
+}
